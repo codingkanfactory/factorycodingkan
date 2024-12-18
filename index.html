@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Panel</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Feather Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>User Panel</h1>
+    </div>
+    <form id="user-form">
+      <div class="form-group">
+        <label for="user-name">Nama</label>
+        <div class="input-container">
+          <i data-feather="user"></i>
+          <input type="text" id="user-name" placeholder="Masukkan nama Anda">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="user-class">Kelas</label>
+        <div class="input-container">
+          <i data-feather="book"></i>
+          <select id="user-class">
+            <option value="">Pilih Kelas</option>
+            <option value="10A">10 A</option>
+            <option value="10B">10 B</option>
+            <option value="10C">10 C</option>
+            <option value="10D">10 D</option>
+            <option value="10E">10 E</option>
+            <option value="10F">10 F</option>
+            <option value="10G">10 G</option>
+            <option value="11A">11 A</option>
+            <option value="11B">11 B</option>
+            <option value="11C">11 C</option>
+            <option value="11D">11 D</option>
+            <option value="11E">11 E</option>
+            <option value="11F">11 F</option>
+            <option value="11G">11 G</option>
+            <option value="12IPA1">12 IPA 1</option>
+            <option value="12IPA2">12 IPA 2</option>
+            <option value="12IPA3">12 IPA 3</option>
+            <option value="12IPA4">12 IPA 4</option>
+            <option value="12IPS1">12 IPS 1</option>
+            <option value="12IPS2">12 IPS 2</option>
+            <option value="12IPS3">12 IPS 3</option>
+            <option value="12IPS4">12 IPS 4</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="user-token">Token</label>
+        <div class="input-container">
+          <i data-feather="key"></i>
+          <input type="text" id="user-token" placeholder="Masukkan token">
+        </div>
+      </div>
+      <button type="button" class="btn" id="submit-token-btn">
+        <i data-feather="check-circle"></i>
+        Submit
+      </button>
+    </form>
+  </div>
+
+  <!-- Custom Dialog -->
+  <div class="dialog-overlay" id="dialog-overlay"></div>
+  <div class="dialog" id="custom-dialog">
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-message"></p>
+    <button class="btn" id="dialog-close-btn">OK</button>
+  </div>
+
+  <script type="module" src="scripts.js"></script>
+</body>
+</html>
